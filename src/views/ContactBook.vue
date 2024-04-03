@@ -34,7 +34,6 @@
           <i class="fas fa-address-card"></i>
         </h4>
         <ContactCard :contact="activeContact" />
-        <ContactCard :contact="activeContact" />
         <router-link
           :to="{
             name: 'contact.edit',
@@ -122,7 +121,7 @@ export default {
     },
     goToAddContact() {
       this.$router.push({
-        name: "contact.add",
+        name: "contact.create",
       });
     },
   },
